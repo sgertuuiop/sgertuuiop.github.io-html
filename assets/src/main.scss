@@ -13,27 +13,6 @@ $blue: #89b4fa;
 $purple: #b4befe;
 $disabled: #444444;
 
-$button: repeating-linear-gradient(
-    -45deg,
-    $bg,
-    $bg 5px,
-    $surface 5px,
-    $surface 10px
-);
-
-$construction: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 5px,
-    $bg 5px,
-    $bg 10px
-),
-linear-gradient(
-    to bottom,
-    $surface,
-    $bg
-);
-
 $fonts: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
 .cfore { color: $fg; }
@@ -49,10 +28,6 @@ $fonts: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
 body {
     background-color: $bg;
-    /* background-image: url(/background.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover; */
     color: $fg;
     padding: 25px;
     font-family: $fonts;
@@ -70,9 +45,6 @@ body {
 }
 
 footer {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    //background-color: $surface;
     color: $fg;
     padding: 15px;
     padding-top: 20px;
@@ -82,7 +54,6 @@ footer {
     text-decoration: none;
     display: inline-block;
     width: calc(100% - 30px);
-    //border-radius: 5px;
     border-top: 2px solid $fg;
 }
 
@@ -107,14 +78,6 @@ hr {
     font-weight: 400;
 }
 
-.pttle {
-    font-size: 24pt;
-}
-
-.shead {
-    font-size: 18pt;
-}
-
 .fnote {
     font-size: small;
 }
@@ -132,24 +95,15 @@ hr {
 }
 
 .parag {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    //background-color: $surface;
     color: $fg;
-    //padding: 0px 15px 2.5px 15px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
     display: inline-block;
     width: 100%;
     text-align: justify;
-    //border-radius: 5px;
 }
 
 .butts {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    background: $button;
-    //background-color: none;
+    background-color: $surface;
     color: $fg;
     padding: 15px;
     margin-top: 20px;
@@ -157,60 +111,36 @@ hr {
     text-decoration: none;
     display: inline-block;
     width: calc(100% - 30px);
-    //border-radius: 5px;
     transition-duration: 0.3s;
-    //border-bottom: 2px solid $fg;
 }
 
 .butts:hover {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    background: $fg;
-    //background-color: $surface;
+    background-color: $fg;
     color: $bg;
 }
 
 .heads {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    //background-color: $surface;
-    //background: $construction;
-    //border-radius: 5px;
     width: calc(100% - 30px);
-    //margin: 20px 0px;
-    //padding: 15px 15px 1px 15px;
-    //min-height: 350px;
-    //max-height: 1000px;
-    // padding: 25px 0px;
-    //border-bottom: 2px solid $fg;
     font-size: xx-large;
 }
 
 .hdimg {
-    //border-radius: 50%;
     width: 32px;
     height: 32px;
 }
 
 .plink {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    background: $button;
+    background-color: $surface;
     color: $fg;
     padding: 0px 15px 0px 15px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    //border-radius: 5px;
     transition-duration: 0.3s;
 }
 
 .plink:hover {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    background: $fg;
-    //background-color: $surface;
+    background-color: $fg;
     color: $bg;
 }
 
@@ -228,7 +158,5 @@ hr {
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    //border-radius: 5px;
     border-bottom: 2px solid $fg;
-    //text-align: center;
 }
