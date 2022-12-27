@@ -1,8 +1,8 @@
 $font-prefix: '/assets/fonts';
 @import '../fonts/scss/ibm-plex.scss';
 
-$bg: #1e1e28;
-$surface: #313244;
+$bg: #311b92;
+$surface: #4527a0;
 $fg: #ffffff;
 $grey: #aaaaaa;
 $red: #f38ba8;
@@ -12,6 +12,27 @@ $green: #a6e3a1;
 $blue: #89b4fa;
 $purple: #b4befe;
 $disabled: #444444;
+
+$button: repeating-linear-gradient(
+    -45deg,
+    $bg,
+    $bg 5px,
+    $surface 5px,
+    $surface 10px
+);
+
+$construction: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    $bg 5px,
+    $bg 10px
+),
+linear-gradient(
+    to bottom,
+    $surface,
+    $bg
+);
 
 $fonts: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
@@ -51,16 +72,18 @@ body {
 footer {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
-    background-color: $surface;
+    //background-color: $surface;
     color: $fg;
     padding: 15px;
+    padding-top: 20px;
     padding-bottom: 1px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     text-decoration: none;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
+    //border-radius: 5px;
+    border-top: 2px solid $fg;
 }
 
 a {
@@ -76,7 +99,7 @@ hr {
 }
 
 .sfont {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .sname {
@@ -111,20 +134,22 @@ hr {
 .parag {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
-    background-color: $surface;
+    //background-color: $surface;
     color: $fg;
-    padding: 0px 15px 2.5px 15px;
+    //padding: 0px 15px 2.5px 15px;
     /* margin-top: 20px; */
     margin-bottom: 20px;
     display: inline-block;
-    width: calc(100% - 30px);
-    border-radius: 5px;
+    width: 100%;
+    text-align: justify;
+    //border-radius: 5px;
 }
 
 .butts {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
-    background-color: $surface;
+    background: $button;
+    //background-color: none;
     color: $fg;
     padding: 15px;
     margin-top: 20px;
@@ -132,70 +157,70 @@ hr {
     text-decoration: none;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
+    //border-radius: 5px;
     transition-duration: 0.3s;
+    //border-bottom: 2px solid $fg;
 }
 
 .butts:hover {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
-    background-color: $fg;
-    color: $surface;
+    background: $fg;
+    //background-color: $surface;
+    color: $bg;
 }
 
 .heads {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
     //background-color: $surface;
-    background: 
-    repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 10px,
-        $surface 10px,
-        $surface 20px
-    ),
-    linear-gradient(
-        to bottom,
-        $bg,
-        $surface
-    );
-    border-radius: 5px;
-    width: calc(100%);
-    margin: 20px 0px;
-    min-height: 350px;
-    max-height: 1000px;
-    padding: 25px 0px;
+    //background: $construction;
+    //border-radius: 5px;
+    width: calc(100% - 30px);
+    //margin: 20px 0px;
+    //padding: 15px 15px 1px 15px;
+    //min-height: 350px;
+    //max-height: 1000px;
+    // padding: 25px 0px;
+    //border-bottom: 2px solid $fg;
+    font-size: xx-large;
+}
+
+.hdimg {
+    //border-radius: 50%;
+    width: 32px;
+    height: 32px;
 }
 
 .plink {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
-    background-color: $surface;
+    background: $button;
     color: $fg;
     padding: 0px 15px 0px 15px;
     /* margin-top: 20px; */
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
+    //border-radius: 5px;
     transition-duration: 0.3s;
 }
 
 .plink:hover {
     /* background-color: rgb(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
-    background-color: $fg;
-    color: $surface;
+    background: $fg;
+    //background-color: $surface;
+    color: $bg;
 }
 
 .ntice {
     background: repeating-linear-gradient(
         -45deg,
         $yellow,
-        $yellow 10px,
-        $orange 10px,
-        $orange 20px
+        $yellow 5px,
+        $orange 5px,
+        $orange 10px
     );
     color: black;
     padding: 15px;
@@ -203,6 +228,7 @@ hr {
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
-    text-align: center;
+    //border-radius: 5px;
+    border-bottom: 2px solid $fg;
+    //text-align: center;
 }
