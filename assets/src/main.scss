@@ -1,8 +1,8 @@
 $font-prefix: '/assets/fonts';
 @import '../fonts/scss/ibm-plex.scss';
 
-$bg: #1e1e28;
-$surface: #313244;
+$bg: #000000;
+$surface: #212121;
 $fg: #ffffff;
 $grey: #aaaaaa;
 $red: #f38ba8;
@@ -28,10 +28,6 @@ $fonts: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
 body {
     background-color: $bg;
-    /* background-image: url(/background.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover; */
     color: $fg;
     padding: 25px;
     font-family: $fonts;
@@ -49,18 +45,16 @@ body {
 }
 
 footer {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    background-color: $surface;
     color: $fg;
     padding: 15px;
+    padding-top: 20px;
     padding-bottom: 1px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     text-decoration: none;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
+    border-top: 2px solid $fg;
 }
 
 a {
@@ -76,20 +70,12 @@ hr {
 }
 
 .sfont {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .sname {
     font-size: 32pt;
     font-weight: 400;
-}
-
-.pttle {
-    font-size: 24pt;
-}
-
-.shead {
-    font-size: 18pt;
 }
 
 .fnote {
@@ -109,21 +95,14 @@ hr {
 }
 
 .parag {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    background-color: $surface;
     color: $fg;
-    padding: 0px 15px 2.5px 15px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
     display: inline-block;
-    width: calc(100% - 30px);
-    border-radius: 5px;
+    width: 100%;
+    text-align: justify;
 }
 
 .butts {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
     background-color: $surface;
     color: $fg;
     padding: 15px;
@@ -132,70 +111,46 @@ hr {
     text-decoration: none;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
     transition-duration: 0.3s;
 }
 
 .butts:hover {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
     background-color: $fg;
-    color: $surface;
+    color: $bg;
 }
 
 .heads {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
-    //background-color: $surface;
-    background: 
-    repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 10px,
-        $surface 10px,
-        $surface 20px
-    ),
-    linear-gradient(
-        to bottom,
-        $bg,
-        $surface
-    );
-    border-radius: 5px;
-    width: calc(100%);
-    margin: 20px 0px;
-    min-height: 350px;
-    max-height: 1000px;
-    padding: 25px 0px;
+    width: calc(100% - 30px);
+    font-size: xx-large;
+}
+
+.hdimg {
+    width: 32px;
+    height: 32px;
 }
 
 .plink {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
     background-color: $surface;
     color: $fg;
     padding: 0px 15px 0px 15px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
     transition-duration: 0.3s;
 }
 
 .plink:hover {
-    /* background-color: rgb(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px); */
     background-color: $fg;
-    color: $surface;
+    color: $bg;
 }
 
 .ntice {
     background: repeating-linear-gradient(
         -45deg,
         $yellow,
-        $yellow 10px,
-        $orange 10px,
-        $orange 20px
+        $yellow 5px,
+        $orange 5px,
+        $orange 10px
     );
     color: black;
     padding: 15px;
@@ -203,6 +158,5 @@ hr {
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    border-radius: 5px;
-    text-align: center;
+    border-bottom: 2px solid $fg;
 }
