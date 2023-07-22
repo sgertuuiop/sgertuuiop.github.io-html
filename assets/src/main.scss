@@ -1,13 +1,8 @@
-//$font-prefix: '/assets/fonts';
-//@import '../fonts/scss/ibm-plex.scss';
-
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 $bg: #e0f2f1;
-$bgsec: #ffffff;
 $surface: #b2dfdb;
 $fg: #000000;
-$fgsurface: #000000;
 $grey: #aaaaaa;
 $red: #b71c1c;
 $orange: #e65100;
@@ -34,14 +29,15 @@ body {
     background-color: $bg;
     /* background: repeating-linear-gradient(
         -45deg,
-        $bgsec,
-        $bgsec 10px,
+        white,
+        white 10px,
         $bg 10px,
         $bg 20px
     ); */
     color: $fg;
     padding: 25px;
     font-family: $fonts;
+    font-size: large;
 }
 
 .wraps {
@@ -91,7 +87,7 @@ hr {
 }
 
 .fnote {
-    font-size: small;
+    font-size: medium;
 }
 
 //.ccbut {
@@ -116,7 +112,7 @@ hr {
 
 .butts {
     background-color: $surface;
-    color: $fgsurface;
+    color: $fg;
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -130,6 +126,10 @@ hr {
 .butts:hover {
     background-color: $fg;
     color: $bg;
+}
+
+.bicon {
+    float: right;
 }
 
 .heads {
