@@ -1,19 +1,23 @@
-$font-prefix: '/assets/fonts';
-@import '../fonts/scss/ibm-plex.scss';
+//$font-prefix: '/assets/fonts';
+//@import '../fonts/scss/ibm-plex.scss';
 
-$bg: #000000;
-$surface: #212121;
-$fg: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+$bg: #e0f2f1;
+$bgsec: #ffffff;
+$surface: #b2dfdb;
+$fg: #000000;
+$fgsurface: #000000;
 $grey: #aaaaaa;
-$red: #f38ba8;
-$orange: #fab387;
-$yellow: #f9e2af;
-$green: #a6e3a1;
-$blue: #89b4fa;
-$purple: #b4befe;
+$red: #b71c1c;
+$orange: #e65100;
+$yellow: #f57f17;
+$green: #1b5e20;
+$blue: #0d47a1;
+$purple: #311b92;
 $disabled: #444444;
 
-$fonts: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+$fonts: 'Alegreya Sans', 'Helvetica Neue', Arial, sans-serif;
 
 .cfore { color: $fg; }
 .cback { color: $bg; }
@@ -28,6 +32,13 @@ $fonts: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
 body {
     background-color: $bg;
+    /* background: repeating-linear-gradient(
+        -45deg,
+        $bgsec,
+        $bgsec 10px,
+        $bg 10px,
+        $bg 20px
+    ); */
     color: $fg;
     padding: 25px;
     font-family: $fonts;
@@ -71,6 +82,7 @@ hr {
 
 .sfont {
     font-weight: 400;
+    font-style: italic;
 }
 
 .sname {
@@ -82,9 +94,9 @@ hr {
     font-size: small;
 }
 
-.ccbut {
-    filter: invert(1);
-}
+//.ccbut {
+//    filter: invert(1);
+//}
 
 .ccbut:hover {
     cursor: default;
@@ -104,7 +116,7 @@ hr {
 
 .butts {
     background-color: $surface;
-    color: $fg;
+    color: $fgsurface;
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -112,6 +124,7 @@ hr {
     display: inline-block;
     width: calc(100% - 30px);
     transition-duration: 0.3s;
+    border-radius: 5px;
 }
 
 .butts:hover {
@@ -148,15 +161,17 @@ hr {
     background: repeating-linear-gradient(
         -45deg,
         $yellow,
-        $yellow 5px,
-        $orange 5px,
-        $orange 10px
+        $yellow 10px,
+        $orange 10px,
+        $orange 20px
     );
-    color: black;
+    color: white;
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
     width: calc(100% - 30px);
-    border-bottom: 2px solid $fg;
+    //border-bottom: 2px solid $fg;
+    border-radius: 5px;
+    text-align: center;
 }
